@@ -6,10 +6,12 @@ import { Routes, Route } from "react-router-dom";
 import Police from "./Pages/Police";
 import Fire from "./Pages/Fire";
 import Hospital from "./Pages/Hospital";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <>
+    <Navbar/>
       <Routes>
         <Route index element={<SignUp />} />
         <Route path="/signup" element={<SignUp />} />
