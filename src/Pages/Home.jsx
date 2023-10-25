@@ -4,7 +4,7 @@ import Body from "../components/home/Body";
 const Home = () => {
   return (
     <main className="bg-slate-950 text-white p-4 md:px-10 flex flex-col justify-center items-center py-24">
-      <div className="text-[#00df9a] min-h-screen items-center justify-center grid lg:grid-cols-2 grid-cols-1 w-full">
+      <div className=" min-h-screen items-center justify-center grid lg:grid-cols-2 grid-cols-1 w-full">
         <div>
           <h1 className=" md:text-5xl text-[#00df9a] sm:text-4xl text-xl font-bold">
             EMERGENCY <span className="text-white">HELP DEPARTMENTS</span>
