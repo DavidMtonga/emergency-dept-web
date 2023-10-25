@@ -25,6 +25,7 @@ const Hero = () => {
           </p>
         </div>
         <div className="relative rounded-xl">
+          <a href="https://www.pexels.com/photo/group-of-men-wearing-black-and-yellow-safety-helmet-holding-yellow-and-black-skateboard-3058827/" className=" absolute top-0 right-0 text-black text-xs px-2">Photo by Markus Spiske</a>
           <img
             src="/src/assets/hero.jpg"
             alt="hero"

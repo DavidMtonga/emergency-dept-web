@@ -5,13 +5,15 @@ import { Link } from "react-router-dom";
 
 const Body = () => {
   return (
-    <div className="mb-4 w-full">
-        <div className=" flex bg-white rounded-lg border p-2 shadow-md mb-5 ">
+    <div className="mb-4 w-full flex justify-evenly">
+        <div className=" flex bg-white flex-col rounded-lg border p-2 shadow-md mb-5 ">
+          <div className=" items-center justify-center w-full flex">
           <img
             className=" w-20 rounded-full h-20 mr-2"
             src={police}
             alt="police department"
           />
+          </div>
           <div className="flex flex-col justify-center items-center">
             <h1 className="text-3xl text-gray-500">Police Department</h1>
             <Link to="/police">
@@ -21,12 +23,14 @@ const Body = () => {
             </Link>
           </div>
         </div>
-        <div className=" flex bg-white rounded-lg border p-2 shadow-md mb-5 ">
+        <div className=" flex bg-white flex-col rounded-lg border p-2 shadow-md mb-5 ">
+        <div className=" items-center justify-center w-full flex">
           <img
             className="w-20 rounded-full h-20 mr-2"
             src={fire}
             alt="fire department"
           />
+          </div>
           <div className="flex flex-col justify-center items-center">
             <h1 className="text-3xl text-gray-500">Fire Department</h1>
             <Link to="/fire">
@@ -36,12 +40,14 @@ const Body = () => {
             </Link>
           </div>
         </div>
-        <div className="flex bg-white rounded-lg border p-2 shadow-md mb-5 ">
+        <div className="flex bg-white flex-col rounded-lg border p-2 shadow-md mb-5 ">
+        <div className=" items-center justify-center w-full flex">
           <img
             className="w-20 rounded-full h-20 mr-2"
             src={Health}
             alt="police department"
           />
+          </div>
           <div className="flex flex-col justify-center items-center">
             <h1 className="text-3xl text-gray-500">Health Department</h1>
             <Link to="/hospital">
