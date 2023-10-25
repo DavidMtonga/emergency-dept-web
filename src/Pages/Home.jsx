@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import Typed from "react-typed";
 import police from "../images/police.png";
@@ -31,8 +30,8 @@ const Home = () => {
       </div>
       <div className="text-xl text-gray-500 text-center bg-white p-4 shadow-md  mb-5">
         <p>
-          Moreover, the app's integration of location services ensures that
-          responders can pinpoint the caller's exact position, further
+          Moreover, the app&#39;s integration of location services ensures that
+          responders can pinpoint the caller&#39;s exact position, further
           expediting their arrival and potentially reducing response times. In
           this way, this app not only promotes community safety but also
           instills a sense of security, knowing that help is readily available
