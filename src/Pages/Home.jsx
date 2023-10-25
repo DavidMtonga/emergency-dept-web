@@ -16,7 +16,7 @@ const Home = () => {
             backSpeed={140}
             loop
           />
-          <p className="">
+          <p className=" text-sm">
             The proposed mobile app for the fire department serves as a crucial
             lifeline for our community, offering rapid and efficient access to
             emergency services with the simple touch of a button. By seamlessly
@@ -27,6 +27,7 @@ const Home = () => {
           </p>
         </div>
         <div>
+          <img src="/src/assets/hero.jpg" alt="hero" loading="lazy" className=" h-full w-full object-cover" />
           <p>
             Moreover, the app&#39;s integration of location services ensures
             that responders can pinpoint the caller&#39;s exact position,
