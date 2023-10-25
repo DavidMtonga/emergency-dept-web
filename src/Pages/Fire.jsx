@@ -33,18 +33,7 @@ const Fire = () => {
           src={fire}
           alt="fire department"
         />
-        <h1 className="text-white text-lg font-semibold">Fire Department</h1>
-      </div>
-      <div className="text-xl text-gray-500 text-center bg-white p-4 shadow-md  mb-5">
-        <p>
-          When an emergency call is received, the fire department acts
-          decisively, sending trained firefighters and equipment to the scene.
-          These dedicated professionals work swiftly to contain fires, perform
-          rescue operations, and provide critical assistance during accidents or
-          disasters. Their quick response and expertise ensure the safety of
-          lives and property, embodying the fire department's commitment to
-          safeguarding communities in times of crisis.
-        </p>
+        <h1 className="text-white text-3xl font-bold">Fire Department</h1>
       </div>
       {/* Number generator */}
       <div className="container mx-auto mt-5">
@@ -75,7 +64,7 @@ const Fire = () => {
             <div>
               <button
                 onClick={callNumber}
-                className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+                className="bg-green-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded"
               >
                 Call
               </button>
@@ -83,6 +72,17 @@ const Fire = () => {
           )}
         </div>
         <ChatInput />
+      </div>
+      <div className="text-xl text-gray-500 text-center bg-white p-4 shadow-md  mb-5">
+        <p>
+          When an emergency call is received, the fire department acts
+          decisively, sending trained firefighters and equipment to the scene.
+          These dedicated professionals work swiftly to contain fires, perform
+          rescue operations, and provide critical assistance during accidents or
+          disasters. Their quick response and expertise ensure the safety of
+          lives and property, embodying the fire department's commitment to
+          safeguarding communities in times of crisis.
+        </p>
       </div>
       <div className=" flex text-5xl justify-center gap-8 py-3 text-gray-600">
         <AiFillLinkedin />
