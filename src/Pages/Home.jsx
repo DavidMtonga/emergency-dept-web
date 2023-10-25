@@ -1,24 +1,22 @@
-import { Link } from "react-router-dom";
 import Typed from "react-typed";
-import police from "../images/police.png";
-import fire from "../images/fire.png";
-import Health from "../images/Health.png";
+import Body from "../components/home/Body";
+
 
 const Home = () => {
   return (
-    <main className=" bg-slate-400 min-h-screen p-4 flex flex-col justify-center items-center">
-      <div className="text-3xl text-[#00df9a] text-center font-bold bg-slate-950 mb-7 p-4 w-full">
-        <h1>EMERGENCY HELP DEPARTMENTS</h1>
+    <main className="min-h-screen bg-slate-950 text-white p-4 md:px-10 flex flex-col justify-center items-center py-24">
+      <div className="text-[#00df9a] flex-col p-4 w-full">
+        <h1 className=" md:text-5xl text-[#00df9a] sm:text-4xl text-xl font-bold">
+          EMERGENCY HELP DEPARTMENTS
+        </h1>
         <Typed
-          className=" md:text-5xl text-[#00df9a] sm:text-4xl text-xl font-bold md:pl-4 pl-2"
+          className=" md:text-5xl text-[#00df9a] sm:text-4xl text-xl font-bold"
           strings={["POLICE", "FIRE", "HEALTH"]}
           typeSpeed={120}
           backSpeed={140}
           loop
         />
-      </div>
-      <div className="text-xl text-gray-500 text-center bg-white p-4 shadow-md  mb-5">
-        <p>
+        <p className="">
           The proposed mobile app for the fire department serves as a crucial
           lifeline for our community, offering rapid and efficient access to
           emergency services with the simple touch of a button. By seamlessly
@@ -38,53 +36,7 @@ const Home = () => {
           when needed most.
         </p>
       </div>
-      <div className="mb-4 w-full">
-        <div className=" flex bg-white rounded-lg border p-2 shadow-md mb-5 ">
-          <img
-            className=" w-20 rounded-full h-20 mr-2"
-            src={police}
-            alt="police department"
-          />
-          <div className="flex flex-col justify-center items-center">
-            <h1 className="text-3xl text-gray-500">Police Department</h1>
-            <Link to="/police">
-              <button className="text-2xl font-semibold mt-4 border-2 px-2 rounded-md text-white py-2 bg-gray-800 hover:bg-slate-900">
-                <h1 className="">Select Department</h1>
-              </button>
-            </Link>
-          </div>
-        </div>
-        <div className=" flex bg-white rounded-lg border p-2 shadow-md mb-5 ">
-          <img
-            className="w-20 rounded-full h-20 mr-2"
-            src={fire}
-            alt="fire department"
-          />
-          <div className="flex flex-col justify-center items-center">
-            <h1 className="text-3xl text-gray-500">Fire Department</h1>
-            <Link to="/fire">
-              <button className="text-2xl font-semibold mt-4 border-2 px-2 rounded-md text-white py-2 hover:bg-slate-900 bg-gray-800">
-                <h1 className="">Select Department</h1>
-              </button>
-            </Link>
-          </div>
-        </div>
-        <div className="flex bg-white rounded-lg border p-2 shadow-md mb-5 ">
-          <img
-            className="w-20 rounded-full h-20 mr-2"
-            src={Health}
-            alt="police department"
-          />
-          <div className="flex flex-col justify-center items-center">
-            <h1 className="text-3xl text-gray-500">Health Department</h1>
-            <Link to="/hospital">
-              <button className="text-2xl font-semibold mt-4 border-2 px-2 rounded-md text-white py-2 hover:bg-slate-900 bg-gray-800">
-                <h1 className="">Select Department</h1>
-              </button>
-            </Link>
-          </div>
-        </div>
-      </div>
+      <Body/>
     </main>
   );
 };
