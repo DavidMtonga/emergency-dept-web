@@ -4,7 +4,7 @@ import Body from "../components/home/Body";
 const Home = () => {
   return (
     <main className="bg-slate-950 text-white p-4 md:px-10 flex flex-col justify-center items-center py-24">
-      <div className=" min-h-screen items-center justify-center grid lg:grid-cols-2 grid-cols-1 w-full">
+      <div className=" min-h-screen items-center justify-center grid gap-8 lg:grid-cols-2 grid-cols-1 w-full">
         <div>
           <h1 className=" md:text-5xl text-[#00df9a] sm:text-4xl text-xl font-bold">
             EMERGENCY <span className="text-white">HELP DEPARTMENTS</span>
@@ -26,9 +26,14 @@ const Home = () => {
             that can be the difference between life and death.
           </p>
         </div>
-        <div className="relative">
-          <img src="/src/assets/hero.jpg" alt="hero" loading="lazy" className=" h-full w-full object-cover" />
-          <p className=" absolute bottom-0">
+        <div className="relative rounded-xl">
+          <img
+            src="/src/assets/hero.jpg"
+            alt="hero"
+            loading="lazy"
+            className="w-full object-cover h-[80vh] rounded-xl"
+          />
+          <p className=" absolute bottom-0 rounded-b-xl bg-[#00df9a] text-slate-950 lg:text-left text-center p-4 text-sm">
             Moreover, the app&#39;s integration of location services ensures
             that responders can pinpoint the caller&#39;s exact position,
             further expediting their arrival and potentially reducing response
