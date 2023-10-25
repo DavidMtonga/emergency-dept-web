@@ -26,60 +26,64 @@ const Home = () => {
           connecting users to the emergency department, it empowers citizens to
           swiftly summon assistance during critical situations, such as fires,
           accidents, or medical emergencies, ensuring timely responses that can
-          be the difference between life and death. Moreover, the app's
-          integration of location services ensures that responders can pinpoint
-          the caller's exact position, further expediting their arrival and
-          potentially reducing response times. In this way, this app not only
-          promotes community safety but also instills a sense of security,
-          knowing that help is readily available when needed most.
+          be the difference between life and death.
+        </p>
+      </div>
+      <div className="text-xl text-gray-500 text-center bg-white p-4 shadow-md  mb-5">
+        <p>
+          Moreover, the app's integration of location services ensures that
+          responders can pinpoint the caller's exact position, further
+          expediting their arrival and potentially reducing response times. In
+          this way, this app not only promotes community safety but also
+          instills a sense of security, knowing that help is readily available
+          when needed most.
         </p>
       </div>
       <div className="mb-4 w-full">
-        <div className="flex flex-col justify-center items-center bg-white rounded-lg border p-2 shadow-md mb-5">
-          <div className=" flex">
-            <img
-              className="w-10 rounded-full h-10 mr-2"
-              src={police}
-              alt="police department"
-            />
+        <div className=" flex bg-white rounded-lg border p-2 shadow-md mb-5 ">
+          <img
+            className=" w-20 rounded-full h-20 mr-2"
+            src={police}
+            alt="police department"
+          />
+          <div className="flex flex-col justify-center items-center">
             <h1 className="text-3xl text-gray-500">Police Department</h1>
             <Link to="/police">
-              <button className="text-2xl font-semibold mt-4 border-2 px-2 rounded-md text-white py-2 bg-gray-900">
+              <button className="text-2xl font-semibold mt-4 border-2 px-2 rounded-md text-white py-2 bg-gray-800 hover:bg-slate-900">
                 <h1 className="">Select Department</h1>
               </button>
             </Link>
           </div>
         </div>
-
-        <div className="flex flex-col justify-center items-center bg-white rounded-lg border p-2 shadow-md mb-5">
-          <div className=" flex">
-            <img
-              className="w-10 rounded-full h-10 mr-2"
-              src={fire}
-              alt="fire department"
-            />
+        <div className=" flex bg-white rounded-lg border p-2 shadow-md mb-5 ">
+          <img
+            className="w-20 rounded-full h-20 mr-2"
+            src={fire}
+            alt="fire department"
+          />
+          <div className="flex flex-col justify-center items-center">
+            <h1 className="text-3xl text-gray-500">Fire Department</h1>
+            <Link to="/fire">
+              <button className="text-2xl font-semibold mt-4 border-2 px-2 rounded-md text-white py-2 hover:bg-slate-900 bg-gray-800">
+                <h1 className="">Select Department</h1>
+              </button>
+            </Link>
           </div>
-          <h1 className="text-3xl text-gray-500">Fire Department</h1>
-          <Link to="/fire">
-            <button className="text-2xl font-semibold mt-4 border-2 px-2 rounded-md text-white py-2 bg-gray-900">
-              <h1 className="">Select Department</h1>
-            </button>
-          </Link>
         </div>
-        <div className="flex flex-col justify-center items-center bg-white rounded-lg border p-2 shadow-md mb-5">
-          <div className=" flex">
-            <img
-              className="w-10 rounded-full h-10 mr-2"
-              src={Health}
-              alt="health department"
-            />
+        <div className="flex bg-white rounded-lg border p-2 shadow-md mb-5 ">
+          <img
+            className="w-20 rounded-full h-20 mr-2"
+            src={Health}
+            alt="police department"
+          />
+          <div className="flex flex-col justify-center items-center">
+            <h1 className="text-3xl text-gray-500">Health Department</h1>
+            <Link to="/hospital">
+              <button className="text-2xl font-semibold mt-4 border-2 px-2 rounded-md text-white py-2 hover:bg-slate-900 bg-gray-800">
+                <h1 className="">Select Department</h1>
+              </button>
+            </Link>
           </div>
-          <h1 className="text-3xl text-gray-500">Hospital Department</h1>
-          <Link to="/hospital">
-            <button className="text-2xl font-semibold mt-4 border-2 px-2 rounded-md text-white py-2 bg-gray-900">
-              <h1 className="">Select Department</h1>
-            </button>
-          </Link>
         </div>
       </div>
     </main>
