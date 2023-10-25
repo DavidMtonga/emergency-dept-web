@@ -33,17 +33,6 @@ const Hospital = () => {
         />
         <h1 className="font-bold text-blue-500 text-3xl">Health Department</h1>
       </div>
-      <div className="text-xl text-gray-500 text-center bg-white p-4 shadow-md  mb-5">
-        <p>
-          When an emergency call comes in, the health department swiftly deploys
-          an ambulance to provide life-saving assistance. Trained paramedics and
-          emergency medical personnel respond to the scene, delivering critical
-          care and transportation to medical facilities when needed. The health
-          department's rapid response to emergency calls ensures that
-          individuals in distress receive prompt and professional medical
-          assistance, prioritizing their well-being and saving lives.
-        </p>
-      </div>
       {/* Number generator */}
       <div className="container mx-auto mt-5">
         <h1 className="text-2xl text-gray-600 font-semibold mb-3">
@@ -73,7 +62,7 @@ const Hospital = () => {
             <div>
               <button
                 onClick={callNumber}
-                className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+                className="bg-green-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded"
               >
                 Call
               </button>
@@ -81,6 +70,17 @@ const Hospital = () => {
           )}
         </div>
         <ChatInput />
+      </div>
+      <div className="text-xl text-gray-500 text-center bg-white p-4 shadow-md  mb-5">
+        <p>
+          When an emergency call comes in, the health department swiftly deploys
+          an ambulance to provide life-saving assistance. Trained paramedics and
+          emergency medical personnel respond to the scene, delivering critical
+          care and transportation to medical facilities when needed. The health
+          department's rapid response to emergency calls ensures that
+          individuals in distress receive prompt and professional medical
+          assistance, prioritizing their well-being and saving lives.
+        </p>
       </div>
       <div className=" flex text-5xl justify-center gap-8 py-3 text-gray-600">
         <AiFillLinkedin />
