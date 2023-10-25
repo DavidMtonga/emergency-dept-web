@@ -26,9 +26,9 @@ const Home = () => {
             that can be the difference between life and death.
           </p>
         </div>
-        <div>
+        <div className="relative">
           <img src="/src/assets/hero.jpg" alt="hero" loading="lazy" className=" h-full w-full object-cover" />
-          <p>
+          <p className=" absolute bottom-0">
             Moreover, the app&#39;s integration of location services ensures
             that responders can pinpoint the caller&#39;s exact position,
             further expediting their arrival and potentially reducing response
