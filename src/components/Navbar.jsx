@@ -8,7 +8,7 @@ const Navbar = () => {
         <Link to={"/home"} className=" font-extrabold text-xl">
           Logo
         </Link>
-        <div className="flex gap-4 lg:hidden">
+        <div className="lg:flex gap-4 hidden">
           <Link to={""} className="hover:text-[#00df9a] duration-300">
             Departments
           </Link>
@@ -24,7 +24,7 @@ const Navbar = () => {
         </div>
         <div className="lg:hidden flex">
           <button onClick={() => setOpen(!open)}>menu</button>
-          <div className=" h-screen grid gap-4 absolute top-[100%] right-0">
+          <div className=" h-screen flex-col flex p-4 pt-6 gap-4 bg-slate-950 w-2/3 absolute top-[100%] right-0">
             <Link to={""} className="hover:text-[#00df9a] duration-300">
               Departments
             </Link>
