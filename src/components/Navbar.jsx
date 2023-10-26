@@ -38,6 +38,8 @@ const Navbar = () => {
             <div className="h-1 w-8 rounded-full bg-white"></div>
             <div className="h-1 w-8 rounded-full bg-white"></div>
           </button>
+
+          {/* Mobile Menu */}
           <motion.div
             animate={open ? { translateX: 0 } : { translateX: "100%" }}
             transition={{ type: "tween" }}
