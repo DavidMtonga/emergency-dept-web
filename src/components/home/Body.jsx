@@ -7,7 +7,7 @@ const Body = () => {
       {departments.map((item, i) => (
         <div
           key={i}
-          className=" flex bg-white flex-col text-center justify-center items-center rounded-lg border p-2 shadow-md  "
+          className=" flex bg-white flex-col text-center justify-center gap-4 items-center rounded-lg border p-2 shadow-md  "
         >
           <div className=" items-center justify-center w-full flex">
             <img
