@@ -12,7 +12,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desk */}
-        <div className="lg:flex gap-4 hidden">
+        <div className="lg:flex gap-4 hidden font-semibold">
           <Link to={""} className="hover:text-[#00df9a] duration-300">
             Departments
           </Link>
@@ -43,7 +43,7 @@ const Navbar = () => {
           <motion.div
             animate={open ? { translateX: 0 } : { translateX: "100%" }}
             transition={{ type: "tween" }}
-            className=" h-screen flex-col flex p-4 pt-6 gap-4 bg-slate-950 w-2/3 absolute top-[100%] right-0"
+            className=" h-screen flex-col font-semibold flex p-4 pt-6 gap-4 bg-slate-950 w-2/3 absolute top-[100%] right-0"
           >
             <Link to={""} className="hover:text-[#00df9a] duration-300">
               Departments
