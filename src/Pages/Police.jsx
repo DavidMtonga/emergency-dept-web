@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 import ChatInput from "./ChatInput";
 import police from "../images/police.png";
@@ -25,7 +24,7 @@ const Police = () => {
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col">
       {/* Header */}
-      <div className=" bg-black p-4 flex items-center justify-center">
+      <div className=" bg-black p-4 flex-col pt-36 pb-16 flex items-center justify-center">
         <img
           className=" w-64 h-64 rounded-full mr-2"
           src={police}
@@ -79,7 +78,7 @@ const Police = () => {
           well-coordinated response is initiated to offer immediate assistance.
           Highly trained dispatchers assess the situation, gather crucial
           information, and dispatch officers to the scene swiftly. The police
-          department's primary mission is to ensure the safety and well-being of
+          department&#39;s primary mission is to ensure the safety and well-being of
           the community, and their rapid and organized response to emergency
           calls plays a vital role in achieving this goal.
         </p>
