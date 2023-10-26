@@ -26,9 +26,9 @@ const Police = () => {
     <div className="bg-gray-100 min-h-screen flex flex-col">
       {/* Header */}
       <div className=" relative flex-col flex items-center justify-center overflow-hidden">
-        <div className=" z-10 flex-col py-24 flex bg-slate-950 bg-opacity-90 w-full items-center justify-center">
+        <div className=" z-10 flex-col py-24 flex bg-slate-950 bg-opacity-80 w-full items-center justify-center">
           <img
-            className=" w-64 h-64 rounded-full"
+            className=" w-64 h-64 rounded-full mt-10"
             src={police}
             alt="police department"
           />
@@ -44,53 +44,44 @@ const Police = () => {
         />
       </div>
       {/* Number generator */}
-      <div className="container mx-auto mt-5">
-        <h1 className="text-2xl font-semibold mb-3">
-          Emergency Phone Number Generator
-        </h1>
-        <button
-          className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
-          onClick={generateRandomNumber}
-        >
-          Generate Phone Number
-        </button>
-        <input
-          className="mt-3 p-2 border border-gray-400 rounded"
-          type="text"
-          readOnly
-          value={generatedNumber}
-        />
-        {/* call Number */}
-        <div className="p-4">
-          {generatedNumber && (
-            <div className="mb-4">
-              <p className="text-lg font-bold">Generated Phone Number:</p>
-              <p>{generatedNumber}</p>
-            </div>
-          )}
-          {generatedNumber && (
-            <div>
-              <button
-                onClick={callNumber}
-                className="bg-green-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded"
-              >
-                Call
-              </button>
-            </div>
-          )}
+      <div className="grid py-12 grid-cols-2 items-center justify-center w-full px-4 md:px-10">
+        <div>
+          <h1 className="text-2xl font-semibold mb-3">
+            Emergency Phone Number Generator
+          </h1>
+          <button
+            className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+            onClick={generateRandomNumber}
+          >
+            Generate Number
+          </button>
+          <input
+            className="mt-3 p-2 border border-gray-400 rounded"
+            type="text"
+            readOnly
+            value={generatedNumber}
+          />
+          {/* call Number */}
+          <div className="p-4">
+            {generatedNumber && (
+              <div className="mb-4">
+                <p className="text-lg font-bold">Generated Phone Number:</p>
+                <p>{generatedNumber}</p>
+              </div>
+            )}
+            {generatedNumber && (
+              <div>
+                <button
+                  onClick={callNumber}
+                  className="bg-green-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded"
+                >
+                  Call
+                </button>
+              </div>
+            )}
+          </div>
         </div>
         <ChatInput />
-      </div>
-      <div className="text-xl text-gray-500 text-center bg-white p-4 shadow-md  mb-5">
-        <p>
-          The emergency call will be received by the police department, a
-          well-coordinated response is initiated to offer immediate assistance.
-          Highly trained dispatchers assess the situation, gather crucial
-          information, and dispatch officers to the scene swiftly. The police
-          department&#39;s primary mission is to ensure the safety and
-          well-being of the community, and their rapid and organized response to
-          emergency calls plays a vital role in achieving this goal.
-        </p>
       </div>
       <div className=" flex text-5xl justify-center gap-8 py-3 text-gray-600">
         <AiFillLinkedin />
