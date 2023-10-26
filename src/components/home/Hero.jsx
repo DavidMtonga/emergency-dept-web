@@ -4,11 +4,11 @@ const Hero = () => {
     <main className="bg-slate-950 text-white p-4 md:px-10 flex flex-col justify-center items-center py-24">
       <div className=" min-h-screen items-center justify-center grid gap-8 lg:grid-cols-2 grid-cols-1 w-full">
         <div className=" text-center md:text-left">
-          <h1 className=" md:text-5xl text-[#00df9a] sm:text-4xl text-xl font-bold">
+          <h1 className=" md:text-5xl text-[#00df9a] text-3xl font-bold">
             EMERGENCY <span className="text-white">HELP DEPARTMENTS</span>
           </h1>
           <Typed
-            className=" md:text-5xl text-[#00df9a] sm:text-4xl text-xl font-bold"
+            className=" md:text-5xl text-[#00df9a] text-3xl font-bold"
             strings={["POLICE", "FIRE", "HEALTH"]}
             typeSpeed={120}
             backSpeed={140}
