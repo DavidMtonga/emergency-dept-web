@@ -3,17 +3,17 @@ import { departments } from "../../constants/departments";
 
 const Body = () => {
   return (
-    <div className="min-h-screen grid items-center w-full px-4 md:px-10">
+    <div className="min-h-screen flex flex-col gap-8 py-24 justify-center items-center w-full px-4 md:px-10">
       <div className=" text-center grid gap-4">
         <h1 className="md:text-5xl text-2xl font-bold">Departments</h1>
-        <p className=" text-sm">
+        <p className=" text-sm md:max-w-xl max-w-sm">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat
           voluptatem id sed consectetur eius labore amet harum, vitae aperiam
           hic saepe eveniet cumque nihil necessitatibus earum error, distinctio
           exercitationem. Quibusdam.
         </p>
       </div>
-      <div className="mb-4 w-full flex justify-evenly gap-4 md:flex-row flex-col items-center p-4 md:px-10">
+      <div className=" w-full flex justify-evenly gap-8 md:flex-row flex-col items-center p-4 md:px-10">
         {departments.map((item, i) => (
           <div
             key={i}
