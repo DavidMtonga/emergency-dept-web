@@ -12,7 +12,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desk */}
-        <div className="lg:flex gap-4 hidden font-semibold">
+        <div className="lg:flex gap-8 hidden font-semibold">
           <Link to={""} className="hover:text-[#00df9a] duration-300">
             Departments
           </Link>
