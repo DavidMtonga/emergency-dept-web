@@ -1,4 +1,4 @@
-import React from "react";
+
 import { useState } from "react";
 import ChatInput from "./ChatInput";
 import fire from "../images/fire.png";
@@ -80,7 +80,7 @@ const Fire = () => {
           These dedicated professionals work swiftly to contain fires, perform
           rescue operations, and provide critical assistance during accidents or
           disasters. Their quick response and expertise ensure the safety of
-          lives and property, embodying the fire department's commitment to
+          lives and property, embodying the fire department&#39;s commitment to
           safeguarding communities in times of crisis.
         </p>
       </div>
