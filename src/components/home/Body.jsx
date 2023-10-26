@@ -4,7 +4,7 @@ import { departments } from "../../constants/departments";
 const Body = () => {
   return (
     <div className="min-h-screen grid items-center w-full">
-      <div>
+      <div className=" text-center">
         <h1>Departments</h1>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat
