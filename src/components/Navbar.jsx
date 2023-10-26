@@ -29,6 +29,8 @@ const Navbar = () => {
 
         {/* Mobile menu */}
         <div className="lg:hidden flex">
+
+          {/* Menu button */}
           <button
             onClick={() => setOpen(!open)}
             className="flex flex-col gap-2"
