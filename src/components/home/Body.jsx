@@ -26,7 +26,7 @@ const Body = () => {
       <div className=" flex bg-white flex-col rounded-lg border p-2 shadow-md mb-5 ">
         <div className=" items-center justify-center w-full flex">
           <img
-            className="w-20 rounded-full h-20"
+            className="rounded-full h-20"
             src={fire}
             alt="fire department"
           />
