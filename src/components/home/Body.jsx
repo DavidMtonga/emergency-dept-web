@@ -3,11 +3,11 @@ import { departments } from "../../constants/departments";
 
 const Body = () => {
   return (
-    <div className="mb-4 w-full flex justify-evenly p-4 md:px-10">
+    <div className="mb-4 w-full flex justify-evenly gap-4 md:flex-row flex-col min-h-screen items-center p-4 md:px-10">
       {departments.map((item, i) => (
         <div
           key={i}
-          className=" flex bg-white flex-col text-center justify-center gap-4 items-center rounded-lg border p-4 shadow-md  "
+          className=" flex bg-white flex-col text-center justify-center gap-4 items-center md:w-fit w-full rounded-lg border p-4 shadow-md  "
         >
           <div className=" items-center justify-center w-full flex">
             <img
