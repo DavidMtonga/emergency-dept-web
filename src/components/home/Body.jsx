@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Body = () => {
   return (
     <div className="mb-4 w-full flex justify-evenly">
-      <div className=" flex bg-white flex-col rounded-lg border p-2 shadow-md mb-5 ">
+      <div className=" flex bg-white flex-col rounded-lg border p-2 shadow-md  ">
         <div className=" items-center justify-center w-full flex">
           <img
             className=" w-20 rounded-full h-20"
@@ -23,7 +23,7 @@ const Body = () => {
           </Link>
         </div>
       </div>
-      <div className=" flex bg-white flex-col rounded-lg border p-2 shadow-md mb-5 ">
+      <div className=" flex bg-white flex-col rounded-lg border p-2 shadow-md">
         <div className=" items-center justify-center w-full flex">
           <img
             className="rounded-full h-20"
@@ -40,7 +40,7 @@ const Body = () => {
           </Link>
         </div>
       </div>
-      <div className="flex bg-white flex-col rounded-lg border p-2 shadow-md mb-5 ">
+      <div className="flex bg-white flex-col rounded-lg border p-2 shadow-md">
         <div className=" items-center justify-center w-full flex">
           <img
             className="w-20 rounded-full h-20"
