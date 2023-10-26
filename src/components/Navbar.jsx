@@ -23,7 +23,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="lg:hidden flex">
-          <button onClick={() => setOpen(!open)} className="flex flex-col gap-3">
+          <button onClick={() => setOpen(!open)} className="flex flex-col gap-1">
             <div className="h-1 w-8 bg-white"></div>
             <div className="h-1 w-8 bg-white"></div>
             <div className="h-1 w-8 bg-white"></div>
