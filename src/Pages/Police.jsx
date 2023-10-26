@@ -6,6 +6,7 @@ import {
   AiFillGooglePlusCircle,
   AiFillLinkedin,
 } from "react-icons/ai";
+import body from "../assets/body.jpg";
 
 const Police = () => {
   const phoneNumbers = ["0976001612", "987-654-3210", "555-123-4567", "991"];
@@ -24,15 +25,23 @@ const Police = () => {
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col">
       {/* Header */}
-      <div className=" bg-black p-4 flex-col pt-36 pb-16 flex items-center justify-center">
+      <div className=" relative flex-col flex items-center justify-center overflow-hidden">
+        <div className=" z-10 flex-col py-24 flex bg-slate-950 bg-opacity-90 w-full items-center justify-center">
+          <img
+            className=" w-64 h-64 rounded-full"
+            src={police}
+            alt="police department"
+          />
+          <h1 className="text-white text-3xl flex font-bold">
+            <span className=" text-red-600">Pol</span>ice Department
+          </h1>
+        </div>
         <img
-          className=" w-64 h-64 rounded-full mr-2"
-          src={police}
-          alt="police department"
+          src={body}
+          alt="hero"
+          loading="lazy"
+          className="absolute object-cover h-full z-0 w-full"
         />
-        <h1 className="text-white text-3xl flex font-bold">
-          <span className=" text-red-600">Pol</span>ice Department
-        </h1>
       </div>
       {/* Number generator */}
       <div className="container mx-auto mt-5">
@@ -78,9 +87,9 @@ const Police = () => {
           well-coordinated response is initiated to offer immediate assistance.
           Highly trained dispatchers assess the situation, gather crucial
           information, and dispatch officers to the scene swiftly. The police
-          department&#39;s primary mission is to ensure the safety and well-being of
-          the community, and their rapid and organized response to emergency
-          calls plays a vital role in achieving this goal.
+          department&#39;s primary mission is to ensure the safety and
+          well-being of the community, and their rapid and organized response to
+          emergency calls plays a vital role in achieving this goal.
         </p>
       </div>
       <div className=" flex text-5xl justify-center gap-8 py-3 text-gray-600">
