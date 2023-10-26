@@ -6,7 +6,7 @@ const Body = () => {
     <div className="min-h-screen grid items-center w-full px-4 md:px-10">
       <div className=" text-center">
         <h1 className="md:text-5xl text-2xl font-bold">Departments</h1>
-        <p>
+        <p className=" text-sm">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat
           voluptatem id sed consectetur eius labore amet harum, vitae aperiam
           hic saepe eveniet cumque nihil necessitatibus earum error, distinctio
