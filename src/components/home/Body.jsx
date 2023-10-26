@@ -17,7 +17,7 @@ const Body = () => {
         {departments.map((item, i) => (
           <div
             key={i}
-            className=" flex bg-white flex-col text-center justify-center gap-4 items-center md:w-fit w-full rounded-lg border p-4 shadow-md  "
+            className=" flex bg-white flex-col text-center justify-center gap-4 items-center md:w-fit w-full rounded-3xl border p-4 shadow-md  "
           >
             <div className=" items-center justify-center w-full flex">
               <img
