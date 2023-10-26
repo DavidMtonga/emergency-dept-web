@@ -26,7 +26,6 @@ const Navbar = () => {
           <button onClick={() => setOpen(!open)} className="flex flex-col gap-1">
             <div className="h-1 w-8 bg-white"></div>
             <div className="h-1 w-8 bg-white"></div>
-            <div className="h-1 w-8 bg-white"></div>
           </button>
           <div className=" h-screen flex-col flex p-4 pt-6 gap-4 bg-slate-950 w-2/3 absolute top-[100%] right-0">
             <Link to={""} className="hover:text-[#00df9a] duration-300">
