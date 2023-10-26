@@ -7,7 +7,7 @@ const Body = () => {
       {departments.map((item, i) => (
         <div
           key={i}
-          className=" flex bg-white flex-col rounded-lg border p-2 shadow-md  "
+          className=" flex bg-white flex-col text-center justify-center items-center rounded-lg border p-2 shadow-md  "
         >
           <div className=" items-center justify-center w-full flex">
             <img
@@ -17,8 +17,8 @@ const Body = () => {
               loading="lazy"
             />
           </div>
-          <h1 className="text-xl text-gray-500">{item.name} Department</h1>
-          <Link to={item.link}>Select</Link>
+          <h1 className="text-xl text-gray-500">{item.name}</h1>
+          <Link to={item.link}>Select Department</Link>
         </div>
       ))}
     </div>
