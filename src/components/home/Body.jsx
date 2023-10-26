@@ -18,7 +18,7 @@ const Body = () => {
             />
           </div>
           <h1 className="text-xl text-gray-500">{item.name}</h1>
-          <Link to={item.link} className=" bg-slate-950 text-white hover:text-slate-950 hover:bg-[#00df9a] p-2 rounded-full">Select Department</Link>
+          <Link to={item.link} className=" bg-slate-950 text-white hover:text-slate-950 hover:bg-[#00df9a] px-4 py-2 rounded-full">Select Department</Link>
         </div>
       ))}
     </div>
