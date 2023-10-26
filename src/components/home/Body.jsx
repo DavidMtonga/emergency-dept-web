@@ -17,9 +17,7 @@ const Body = () => {
         <div className="flex flex-col justify-center items-center">
           <h1 className="text-xl text-gray-500">{item.name} Department</h1>
           <Link to={item.link}>
-            <button className="text-2xl font-semibold mt-4 border-2 px-2 rounded-md text-white py-2 bg-gray-800 hover:bg-slate-900">
-              <h1 className="">Select Department</h1>
-            </button>
+            Select
           </Link>
         </div>
       </div>
