@@ -41,6 +41,7 @@ const Navbar = () => {
             <Link to={""} className="hover:text-[#00df9a] duration-300">
               link1
             </Link>
+            <Link to={""} className="bg-[#00df9a] text-slate-950 w-fit">Login</Link>
           </motion.div>
         </div>
       </nav>
