@@ -1,108 +1,109 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function SignUp() {
+  const [data, setData] = useState("");
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [password, setPassword] = useState("");
+  const [nrc, setNrc] = useState("");
+  const [address, setAddress] = useState("");
+
+  const getdata = async () => {
+    try {
+      const response = await axios.get("http://localhost:8000/");
+      console.log(response.data);
+      setData(response.data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const login = async () => {
+    try {
+      const response = await axios.post("http://localhost:8000/login", {
+        email,
+        name,
+        password,
+        nrc,
+        address,
+      });
+      console.log(response.data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
   return (
-    <div className="flex items-center w-full h-screen justify-center px-3">
-      <div className="flex flex-col shadow-xl gap-2 md:gap-3 p-4 rounded-md">
-        <h1 className="text-3xl text-left font-bold text-gray-900">
-          Registration
-        </h1>
-        <p className="text-lg text-left font-semibold text-gray-500">
-          Enter your full registration details and contacts.
+    <div className="flex flex-col items-center w-full min-h-screen py-32 justify-center px-3">
+      <div className="flex justify-center text-center w-full text-xl my-4">
+        <p className="text-gray-900 font-semibold">
+          Welcome to your Emergency support{" "}
+          <span>
+            <Link to="/" className="underline pl-1 font-bold">
+              System
+            </Link>
+          </span>
+          <span>{data}</span>
         </p>
-        {/* Divider */}
-        <div className="flex items-center w-full py-1">
-          <div className="bg-gray-400 h-[2px] w-full flex"></div>
-          <div className="bg-gray-400 h-[2px] w-full flex"></div>
-        </div>
-        <form>
+      </div>
+      <div className="flex flex-col border shadow-xl gap-2 md:gap-3 p-4 rounded-md w-full lg:max-w-md">
+        <h1 className=" text-left font-bold text-gray-900 text-lg">Register</h1>
+        <form className=" grid gap-3">
           <div className="flex flex-col w-full items-center">
-            <p className="text-lg pb-2 w-full text-left font-bold text-gray-900">
-              Name
-            </p>
             <input
-              placeholder="First Name"
-              type="name"
-              name="name"
-              className="w-full mb-2 px-4 py-2 placeholder:text-gray-800 text-gray-900 border-2 focus:outline-none bg-gray-200 border-gray-400 rounded-md"
-            />
-            <input
-              placeholder="Last Name"
+              placeholder="Name"
               type="name"
               name="name"
               className="w-full px-4 py-2 placeholder:text-gray-800 text-gray-900 border-2 focus:outline-none bg-gray-200 border-gray-400 rounded-md"
-            />
-          </div>
-          {/* Phone no Input */}
-          <div className="flex flex-col w-full items-center">
-            <p className="text-lg pb-2 w-full text-left font-bold text-gray-900">
-              {" "}
-              Mobile number
-            </p>
-            <input
-              placeholder="+260"
-              className="w-full px-4 py-2 placeholder:text-gray-800 text-gray-900 border-2 focus:outline-none bg-gray-200 border-gray-400 rounded-md"
-            />
-          </div>
-          {/* NRC No Input */}
-          <div className="flex flex-col w-full items-center">
-            <p className="text-lg pb-2 w-full text-left font-bold text-gray-900">
-              {" "}
-              NRC number
-            </p>
-            <input
-              placeholder="NRC no"
-              className="w-full px-4 py-2 placeholder:text-gray-800 text-gray-900 border-2 focus:outline-none bg-gray-200 border-gray-400 rounded-md"
-            />
-          </div>
-          {/* Residential address Input */}
-          <div className="flex flex-col w-full items-center">
-            <p className="text-lg pb-2 w-full text-left font-bold text-gray-900">
-              {" "}
-              Residential address
-            </p>
-            <input
-              placeholder="Enter residential address"
-              className="w-full px-4 py-2 placeholder:text-gray-800 text-gray-900 border-2 focus:outline-none bg-gray-200 border-gray-400 rounded-md"
+              onChange={(e) => setName(e.target.value)}
             />
           </div>
           {/* Email Input */}
           <div className="flex flex-col w-full items-center">
-            <p className="text-lg pb-2 w-full text-left font-bold text-gray-900">
-              Email
-            </p>
             <input
-              placeholder="Enter your email"
+              placeholder="Email"
               type="email"
               name="email"
               className="w-full px-4 py-2 placeholder:text-gray-800 text-gray-900 border-2 focus:outline-none bg-gray-200 border-gray-400 rounded-md"
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+          {/* Phone no Input */}
+          <div className="flex flex-col w-full items-center">
+            <input
+              placeholder="Mobile +260..."
+              className="w-full px-4 py-2 placeholder:text-gray-800 text-gray-900 border-2 focus:outline-none bg-gray-200 border-gray-400 rounded-md"
+              onChange={(e) => setPassword(e.target.value)}
+            />
+          </div>
+          {/* NRC No Input */}
+          <div className="flex flex-col w-full items-center">
+            <input
+              placeholder="NRC no.."
+              className="w-full px-4 py-2 placeholder:text-gray-800 text-gray-900 border-2 focus:outline-none bg-gray-200 border-gray-400 rounded-md"
+              onChange={(e) => setNrc(e.target.value)}
+            />
+          </div>
+          {/* Residential address Input */}
+          <div className="flex flex-col w-full items-center">
+            <input
+              placeholder="Residential address"
+              className="w-full px-4 py-2 placeholder:text-gray-800 text-gray-900 border-2 focus:outline-none bg-gray-200 border-gray-400 rounded-md"
+              onChange={(e) => setAddress(e.target.value)}
             />
           </div>
         </form>
-        {/* Error(validation) */}
-        <div>
-          <p className=" font-semibold text-gray-500 text-lg">
-            Please insure correct details.
-          </p>
-          <p className=" font-semibold text-gray-500 text-lg mb-1">
-            Submition is only once.
-          </p>
-        </div>
 
         {/*Create Account Button */}
-        <Link to="home">
-          <button className="flex justify-center font-semibold items-center gap-2 border-2 px-2 rounded-md text-white py-2 bg-gray-900">
+        <Link to="/Home">
+          <button
+            onClick={login}
+            className="flex justify-center font-semibold items-center gap-2 border-2 px-2 rounded-md text-white py-2 w-full bg-gray-900"
+          >
             <h1>Submit</h1>
           </button>
         </Link>
-        <div className="flex justify-center w-full">
-          <p className="text-gray-900 font-semibold">
-            Welcome to your Emergency support
-          </p>
-          <Link to="/home" className="underline pl-1 font-bold">
-            System
-          </Link>
-        </div>
       </div>
     </div>
   );

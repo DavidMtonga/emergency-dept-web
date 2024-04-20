@@ -26,7 +26,7 @@ const Police = () => {
     <div className="bg-gray-100 min-h-screen flex flex-col">
       {/* Header */}
       <div className=" relative flex-col flex items-center justify-center overflow-hidden">
-        <div className=" z-10 flex-col py-24 flex bg-slate-950 bg-opacity-80 w-full items-center justify-center">
+        <div className=" z-10 flex-col py-24 flex bg-slate-950 bg-opacity-60 w-full items-center justify-center">
           <img
             className=" w-64 h-64 rounded-full mt-10"
             src={police}
@@ -81,7 +81,15 @@ const Police = () => {
             )}
           </div>
         </div>
-        <ChatInput />
+        <ChatInput
+          description={`The emergency call will be received by the Police department,
+        a well-coordinated response is initiated to offer immediate assistance.
+        Highly trained dispatchers assess the situation, gather crucial
+        information, and dispatch officers to the scene swiftly. The police
+        department&#39;s primary mission is to ensure the safety and well-being
+        of the community, and their rapid and organized response to emergency
+        calls plays a vital role in achieving this goal.`}
+        />
       </div>
       <div className=" flex text-5xl justify-center gap-8 py-3 text-gray-600">
         <AiFillLinkedin />

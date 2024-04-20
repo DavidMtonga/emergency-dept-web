@@ -7,10 +7,11 @@ const Body = () => {
       <div className=" text-center grid gap-4">
         <h1 className="md:text-5xl text-2xl font-bold">Departments</h1>
         <p className=" text-sm md:max-w-xl max-w-sm">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat
-          voluptatem id sed consectetur eius labore amet harum, vitae aperiam
-          hic saepe eveniet cumque nihil necessitatibus earum error, distinctio
-          exercitationem. Quibusdam.
+          The health, police, and fire departments are dedicated to ensuring
+          community safety. With a commitment to swift and compassionate care,
+          law enforcement, and emergency response, these essential services
+          prioritize your well-being, providing reassurance that capable hands
+          are ready to respond in times of crisis.
         </p>
       </div>
       <div className=" w-full flex justify-evenly gap-8 md:flex-row flex-col items-center p-4 md:px-10">

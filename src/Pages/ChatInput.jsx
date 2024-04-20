@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const ChatInput = () => {
+const ChatInput = ({ description, className }) => {
   const [message, setMessage] = useState("");
 
   const handleSendMessage = () => {
@@ -28,18 +28,9 @@ const ChatInput = () => {
           Send Alert!
         </button>
       </div>
-      <p className=" text-sm">
-          The emergency call will be received by the police department, a
-          well-coordinated response is initiated to offer immediate assistance.
-          Highly trained dispatchers assess the situation, gather crucial
-          information, and dispatch officers to the scene swiftly. The police
-          department&#39;s primary mission is to ensure the safety and
-          well-being of the community, and their rapid and organized response to
-          emergency calls plays a vital role in achieving this goal.
-        </p>
+      <p className={className}>{description}</p>
     </div>
   );
 };
 
 export default ChatInput;
-
