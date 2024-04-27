@@ -43,8 +43,9 @@ const Police = () => {
           className="absolute object-cover h-full z-0 w-full"
         />
       </div>
+
       {/* Number generator */}
-      <div className="grid py-12 grid-cols-2 items-center justify-center w-full px-4 md:px-10">
+      <div className="grid py-12 grid-cols-2 items-center justify-center w-full px-4 md:px-10 sm:px-10">
         <div>
           <h1 className="text-2xl font-semibold mb-3">
             Emergency Phone Number Generator
@@ -81,15 +82,35 @@ const Police = () => {
             )}
           </div>
         </div>
-        <ChatInput
-          description={`The emergency call will be received by the Police department,
+        <div>
+          <ChatInput
+            description={`The emergency call will be received by the Police department,
         a well-coordinated response is initiated to offer immediate assistance.
         Highly trained dispatchers assess the situation, gather crucial
         information, and dispatch officers to the scene swiftly. The police
         department&#39;s primary mission is to ensure the safety and well-being
         of the community, and their rapid and organized response to emergency
         calls plays a vital role in achieving this goal.`}
-        />
+          />
+        </div>
+      </div>
+      <div className="map-section">
+        <div className="gmap-frame">
+          <div width="100%">
+            <iframe
+              id="gmap_canvas"
+              width="50%"
+              height="400"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=Zambia,%20Lusaka+(Emergency%20Dept%20web)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            >
+              <a href="https://www.gps.ie/">gps trackers</a>
+            </iframe>
+          </div>
+        </div>
       </div>
       <div className=" flex text-5xl justify-center gap-8 py-3 text-gray-600">
         <AiFillLinkedin />

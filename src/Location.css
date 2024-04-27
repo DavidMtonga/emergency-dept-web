@@ -1,0 +1,5 @@
+.map section .gmap-frame #gmap_canvas{
+    height: 65vh;
+    width: 50%;
+    border-radius: 5px;
+}
